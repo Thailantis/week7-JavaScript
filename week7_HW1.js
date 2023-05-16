@@ -36,7 +36,7 @@ console.log(result);
                        
 
 // Question 4: Write an arrow function or regular function to find the max number in a list. Do not use the Math.max Function. The List will be all positive numbers. Expect output is 234125
-
+// function getMaxNumber() {}
 let findAMax=[123,5436,45784,1234,34,65,234125,645,3452,13216,49]
 
 const getMaxNumber = (list) => list.reduce((max, num) => (num > max ? num : max), 0);
