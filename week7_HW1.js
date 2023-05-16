@@ -39,7 +39,7 @@ console.log(result);
 
 let findAMax=[123,5436,45784,1234,34,65,234125,645,3452,13216,49]
 
-const getMaxNumber = (list) => list.reduce((max, num) => (num > max ? num < max), 0);
+const getMaxNumber = (list) => list.reduce((max, num) => (num > max ? num : max), 0);
 console.log(getMaxNumber(findAMAX));
 
 // Question 5: At the end of the third Iteration (the third time the loop has ran) of this for Loop define the state of all the variables used in the cell
