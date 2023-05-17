@@ -194,7 +194,7 @@ class GameMember {
     }
 
     hit() {
-        // A method that will be overridden in child classes
+       throw new Error("hit() must be implemented in the child class.")
     }
 }
 
@@ -221,15 +221,13 @@ class Player extends GameMember {
 }
 
 const dealer = new Dealer();
-const player = new Player();
-
 console.log("Dealer's hand:", dealer.hand);
-console.log("Player's hand:", player.hand);
-
 dealer.hit();
-player.hit();
-
 console.log("Dealer's Hand after hitting:", dealer.hand);
+
+const player = new Player();
+console.log("Player's hand:", player.hand);
+player.hit();
 console.log("Player's Hand after hitting:", player.hand);
 
 // Question 5: Complete 3 Codewars problems using JavaScript, start with ones you have already solved in python.  Paste a link here to the 3 questions you completed
