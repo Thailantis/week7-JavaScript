@@ -1,0 +1,12 @@
+body {
+padding: 20px;
+}
+
+.todo-item {
+margin-bottom: 10px;
+}
+
+.done {
+text-decoration: line-through;
+color: silver;
+}
