@@ -10,3 +10,8 @@ margin-bottom: 10px;
 text-decoration: line-through;
 color: silver;
 }
+
+button {
+color: blue;
+padding: 10px;
+}
