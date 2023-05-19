@@ -1,6 +1,6 @@
 // Question 1: Write a function that takes a string (sentence) and an array of strings (in this example dog_names) and check if one of the list members (dog names) is in the string (sentence). Return an array of the dog names found in the array. hint: filter, includes
 
-function findDogNames(sentence, dogName) {
+function findDogNames(sentence, dogNames) {
   return dogNames.filter(name => sentence.includes(name));
 }
 
@@ -40,7 +40,7 @@ console.log(result);
 let findAMax=[123,5436,45784,1234,34,65,234125,645,3452,13216,49]
 
 const getMaxNumber = (list) => list.reduce((max, num) => (num > max ? num : max), 0);
-console.log(getMaxNumber(findAMAX));
+console.log(getMaxNumber(findAMax));
 
 // Question 5: At the end of the third Iteration (the third time the loop has ran) of this for Loop define the state of all the variables used in the cell
 
@@ -48,14 +48,14 @@ var bingo = "B-I-N-G-O"
 var ognib = ""
 for(let i=bingo.length-1; i>=0; i--){
     ognib+=(bingo[i])
-    //define state from this line on the third iteration
+  // print the i value during each iteration.
+  console.log("i value is", i);
 }
 //bingo value is
 console.log("bingo value is", bingo);
 //ognib value is
 console.log("ognib value is", ognib);
-// i value is
-console.log("i value is", i);
+
 
 // Question 6: Complete 3 Codewars problems using JavaScript, start with ones you have already solved in python. Paste a link hear to the 3 questions you completed
 // Note: This is coming from Time Complexity HW when doing Python.
