@@ -71,7 +71,7 @@ document.getElementById('get-standings-button').addEventListener('click', functi
         {Position: 5, Name: "Haruto Shizaki", nationality: "Japanese", sponsor: "Mercedes", points: 50},
         {Position: 6, Name: "Tasha Lam", nationality: "Singaporean", sponsor: "Ferrari", points: 45},
         {Position: 7, Name: "Shuhua Chang", nationality: "Taiwanese", sponsor: "Reanult", points: 40},
-    ]
+    ];
 
     fetchData(season, round)
         .then(data => createTableRows(data, racers));
