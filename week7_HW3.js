@@ -1,27 +1,32 @@
-const todoForm = document.getElementById('todo-form');
-const todoList = document.getElementById('todo-list');
+const todoForm = document.getElementById('todoForm');
+const todoList = document.getElementById('todoList');
 
 todoForm.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const titleInput = document.getElementById('title');
-    const descriptionInput = document.getElementById('description');
-    const title = titleInput.Value;
-    const description = descriptionInput.value;
+    const title = document.getElementById('titleInput').value;
+    const description = document.getElementById('descriptionInput').value;
 
-    const todoItem = document.createElement('li');
-    todoItem.classList.add('list-group-item');
-    todoItem.innerHTML = `
-        <h5>${title}</h5>
-        <p>${description}</p>
+    const todoItem = {
+        title: title,
+        description: description,
+        done: false
+    };
+
+    const todoItemElement = document.createElement('li');
+    todoItemElement.innerHTML = `
+        <span class="title">${todoItem.title}</span>
+        <span class="description>${todoItem.description}</span>
     `;
+    todoList.appendChild(todoItemElement);
 
-    todoItem.addEventListener('click', function() {
-        todoItem.classList.toggle('done');
+    todoItemElement.addEventListener('click', function() {
+        if (todoItem.done) {
+            this.remove();
+        } else {
+            this.classList.add('done');
+            todoItem.done = true;
+        }
     });
-
-    todoList.appendChild(todoItem);
-
-    titleInput.value = '';
-    descriptionInput.value = '';
+    todoForm.reset();
 });
