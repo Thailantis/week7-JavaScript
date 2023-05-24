@@ -34,7 +34,7 @@ function createTableRows(data) {
         const row = document.createElement('tr');
 
         const positionCell = document.createElement('td');
-        positionCell.textContent = entry.positionText;
+        positionCell.textContent = entry.position;
         row.appendChild(positionCell);
 
         const nameCell = document.createElement('td');
