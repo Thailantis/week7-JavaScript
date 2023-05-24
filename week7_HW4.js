@@ -64,16 +64,16 @@ document.getElementById('get-standings-button').addEventListener('click', functi
     const round = document.getElementById('round').value;
 
     const racers = [
-        {Position: 1, Name: "Yuqing Shao", nationality: "Chinese", sponsor: "Camry", points: 80},
-        {Position: 2, Name: "Cheukying Li", nationality: "Hongkongese", sponsor: "Odyssey", points: 70},
-        {Position: 3, Name: "Nhu Tien", nationality: "Vietnamese", sponsor: "Altima", points: 60},
-        {Position: 4, Name: "Kim Jongsoo", nationality: "Korean", sponsor: "Corolla", points: 55},
-        {Position: 5, Name: "Haruto Shizaki", nationality: "Japanese", sponsor: "Mercedes", points: 50},
-        {Position: 6, Name: "Tasha Lam", nationality: "Singaporean", sponsor: "Ferrari", points: 45},
-        {Position: 7, Name: "Shuhua Chang", nationality: "Taiwanese", sponsor: "Reanult", points: 40},
+        {position: 1, name: "Yuqing Shao", nationality: "Chinese", sponsor: "Camry", points: 80},
+        {position: 2, name: "Cheukying Li", nationality: "Hongkongese", sponsor: "Odyssey", points: 70},
+        {position: 3, name: "Nhu Tien", nationality: "Vietnamese", sponsor: "Altima", points: 60},
+        {position: 4, name: "Kim Jongsoo", nationality: "Korean", sponsor: "Corolla", points: 55},
+        {position: 5, name: "Haruto Shizaki", nationality: "Japanese", sponsor: "Mercedes", points: 50},
+        {position: 6, name: "Tasha Lam", nationality: "Singaporean", sponsor: "Ferrari", points: 45},
+        {position: 7, name: "Shuhua Chang", nationality: "Taiwanese", sponsor: "Reanult", points: 40},
     ];
 
     fetchData(season, round)
-        .then(data => createTableRows(data, racers));
+        .then((data) => createTableRows(data));
 
 });
