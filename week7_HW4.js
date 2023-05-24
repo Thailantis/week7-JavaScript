@@ -70,7 +70,7 @@ document.getElementById('get-standings-button').addEventListener('click', functi
         {position: 4, name: "Kim Jongsoo", nationality: "Korean", sponsor: "Corolla", points: 55},
         {position: 5, name: "Haruto Shizaki", nationality: "Japanese", sponsor: "Mercedes", points: 50},
         {position: 6, name: "Tasha Lam", nationality: "Singaporean", sponsor: "Ferrari", points: 45},
-        {position: 7, name: "Shuhua Chang", nationality: "Taiwanese", sponsor: "Reanult", points: 40},
+        {position: 7, name: "Shuhua Chang", nationality: "Taiwanese", sponsor: "Renault", points: 40},
     ];
 
     fetchData(season, round)
